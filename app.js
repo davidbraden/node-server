@@ -22,6 +22,7 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/scale-master', express.static(path.join(__dirname, '../scale-master')));
+app.use('/doodle', express.static(path.join(__dirname, '../doodle')));
 
 // development only
 if ('development' == app.get('env')) {
